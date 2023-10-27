@@ -7,11 +7,12 @@ import java.sql.DriverManager;
 
 public class Application {
     private static final Logger LOGGER = Logger.getLogger(Application.class);
+
     public static void main(String[] args) {
 
         Connection connection = null;
 
-        try{
+        try {
             Class.forName("org.h2.Driver");
             connection = DriverManager.getConnection("jdbc:h2:~/parcial;INIT=RUNSCRIPT FROM 'create.sql'", "sa", "sa");
 
@@ -20,10 +21,10 @@ public class Application {
         } catch (Exception e) {
             LOGGER.error("No se pudo crear la tabla: " + e.getMessage());
             e.printStackTrace();
-        }finally {
-            try{
+        } finally {
+            try {
                 connection.close();
-            }catch (Exception ex){
+            } catch (Exception ex) {
                 LOGGER.error("No se pudo cerrar la conexion: " + ex.getMessage());
             }
         }
