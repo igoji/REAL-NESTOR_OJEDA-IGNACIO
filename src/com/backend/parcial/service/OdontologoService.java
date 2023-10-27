@@ -13,11 +13,11 @@ public class OdontologoService {
         OdontologoIDao = odontologoIDao;
     }
 
-    public Odontologo registrarOdontologo(Odontologo odontologo){
+    public Odontologo registrarOdontologo(Odontologo odontologo) {
         return OdontologoIDao.registrar(odontologo);
     }
 
-    public List<Odontologo> listarOdontologos(){
+    public List<Odontologo> listarOdontologos() {
         return OdontologoIDao.listarTodos();
     }
 
