@@ -20,7 +20,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 
         private OdontologoService odontologoServiceMemoria = new OdontologoService(new OdontologoDaoMemoria(new ArrayList<>()));
 
-        private OdontologoService getOdontologoServiceH2 = new OdontologoService(new OdontologoDaoH2());
+        private OdontologoService OdontologoServiceH2 = new OdontologoService(new OdontologoDaoH2());
 
         @BeforeAll
         static void doBefore() {
@@ -43,7 +43,18 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
         @Test
         public void deberiaListarTodosLosOdontologosH2() throws ClassNotFoundException, SQLException {
 
-            assertFalse(getOdontologoServiceH2.listarOdontologos().isEmpty());
+            assertFalse(OdontologoServiceH2.listarOdontologos().isEmpty());
+
+        }
+
+        @Test
+        public void deberiaRegistrarUnOdontologoH2(){
+
+        Odontologo odontologo = new Odontologo(66, "Nora", "Rojas");
+        Odontologo odontologoRegistrado = OdontologoServiceH2.registrarOdontologo(odontologo);
+
+        assertTrue(odontologoRegistrado.getId() != 0);
+
 
         }
 

@@ -30,3 +30,9 @@ SELECT * FROM ODONTOLOGOS [42104-224]
 [2023-10-26 22:48:23] [ INFO ] [OdontologoDaoMemoria:31] Lista de odontologos: [Odontologo{id=0, numero_matricula=6, nombre='Bastian', apellido='Alvarado'}, Odontologo{id=0, numero_matricula=7, nombre='Eduardo', apellido='Troncoso'}]
 [2023-10-26 22:48:23] [ INFO ] [OdontologoDaoH2:90] Listado de todos los odontologos: [Odontologo{id=1, numero_matricula=20, nombre='Nestor', apellido='Real'}, Odontologo{id=2, numero_matricula=21, nombre='Ignacio', apellido='Ojeda'}, Odontologo{id=3, numero_matricula=22, nombre='Luciana', apellido='Murga'}]
 [2023-10-26 22:48:24] [ INFO ] [OdontologoDaoMemoria:24] Odontologo guardado: Odontologo{id=1, numero_matricula=5, nombre='Samuel', apellido='Velasco'}
+[2023-10-26 22:55:33] [ INFO ] [OdontologoDaoMemoria:24] Odontologo guardado: Odontologo{id=1, numero_matricula=6, nombre='Bastian', apellido='Alvarado'}
+[2023-10-26 22:55:33] [ INFO ] [OdontologoDaoMemoria:24] Odontologo guardado: Odontologo{id=2, numero_matricula=7, nombre='Eduardo', apellido='Troncoso'}
+[2023-10-26 22:55:33] [ INFO ] [OdontologoDaoMemoria:31] Lista de odontologos: [Odontologo{id=0, numero_matricula=6, nombre='Bastian', apellido='Alvarado'}, Odontologo{id=0, numero_matricula=7, nombre='Eduardo', apellido='Troncoso'}]
+[2023-10-26 22:55:33] [ INFO ] [OdontologoDaoH2:90] Listado de todos los odontologos: [Odontologo{id=1, numero_matricula=20, nombre='Nestor', apellido='Real'}, Odontologo{id=2, numero_matricula=21, nombre='Ignacio', apellido='Ojeda'}, Odontologo{id=3, numero_matricula=22, nombre='Luciana', apellido='Murga'}]
+[2023-10-26 22:55:33] [ INFO ] [OdontologoDaoH2:43] Se registro un odontologo con los siguientes datos: Odontologo{id=4, numero_matricula=66, nombre='Nora', apellido='Rojas'}
+[2023-10-26 22:55:34] [ INFO ] [OdontologoDaoMemoria:24] Odontologo guardado: Odontologo{id=1, numero_matricula=5, nombre='Samuel', apellido='Velasco'}
